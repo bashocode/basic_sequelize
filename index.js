@@ -7,8 +7,10 @@ const port = 3000;
 
 // import router and use that route
 const characterRoutes = require('./routes/character');
+const imageRoutes = require('./routes/image');
 // this will be define the route of the app
 app.use('/', characterRoutes);
+app.use('/image', imageRoutes);
 
 // express will run with port that we use
 app.listen(port, () => {
