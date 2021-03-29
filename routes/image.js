@@ -12,5 +12,6 @@ const imageController = new ImageController();
 
 // register route / which is home, and use the controller function
 routes.post('/upload', upload.single('image'), imageController.uploadImage);
+routes.post('/upload-multi', upload.array('images', 10), imageController.uploadImages);
 
 module.exports = routes;
