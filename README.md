@@ -56,3 +56,8 @@ delete/undo seeders
 ```
 sequelize db:seed:undo:all
 ```
+--------------------------------------
+install multer untuk handling file upload
+```
+npm install --save multer
+```
