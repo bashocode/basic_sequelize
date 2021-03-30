@@ -7,5 +7,6 @@ const characterController = new CharacterController();
 
 // register route / which is home, and use the controller function
 routes.get('/', characterController.getCharacter);
+routes.post('/add', characterController.insertCharacter);
 
 module.exports = routes;

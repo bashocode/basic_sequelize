@@ -5,6 +5,10 @@ const app = express();
 // define the port
 const port = 3000;
 
+// use bodyparser to get req.body
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 // import router and use that route
 const characterRoutes = require('./routes/character');
 const imageRoutes = require('./routes/image');
