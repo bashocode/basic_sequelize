@@ -16,7 +16,7 @@ jangan lupa setting config.json set username, password sama nama database
 ```
 "development": {
   "username": "root",
-  "password": "Ikhda123",
+  "password": "*******",
   "database": "genshin_impact",
   "host": "127.0.0.1",
   "dialect": "mysql"
